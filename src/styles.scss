@@ -1,0 +1,223 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+//@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+//@import "../node_modules/@syncfusion/ej2-angular-diagrams/material.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+
+
+#lbwork {
+  color: white;
+  padding-left: 3px;
+}
+
+#navImg {
+  width: 50px;
+  height: 50px;
+}
+
+
+.footer-bs {
+  background-color: #4e4d4d;
+  padding: 20px;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#fontfooter {
+  font-size: 14px;
+  margin: 0;
+}
+
+.mat-content {
+
+  align-items: center;
+}
+
+.mat-expansion-indicator {
+  margin-top: -8px;
+}
+
+.mat-expansion-panel-header {
+  padding: 0 18px
+}
+
+.mat-content svg {
+  margin-right: 5px;
+}
+
+.mat-card-header .mat-card-title {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 0 !important;
+}
+
+.mat-card-header-text {
+  margin: 0 !important;
+}
+
+mat-dialog-container#modal-component {
+  
+  border-radius: 11px;
+  //background-color: #1a1a1a;
+  //margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  //display: grid;
+  //justify-items: center;
+  //align-items: center;
+  background-color: #d0d0d0;
+  overflow: hidden;
+
+}
+mat-dialog-container#modal-component-add {
+  
+  border-radius: 11px;
+  //background-color: #1a1a1a;
+  //margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  //display: grid;
+  //justify-items: center;
+  //align-items: center;
+  background-color: #fff;
+  overflow: auto;
+
+}
+
+mat-dialog-container#modal-export {
+  /* border: inset #262626; */
+  border-radius: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d0d0d0;
+  overflow: auto;
+  position: relative;
+  left: 80%;
+}
+
+mat-dialog-container#modal-jupyter {
+  /* border: inset #262626; */
+  border-radius: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d0d0d0;
+  overflow: auto;
+  overflow: hidden;
+  //position: relative;
+
+}
+
+
+mat-dialog-container#modal-hdfs {
+  /* border: inset #262626; */
+  border-radius: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d0d0d0;
+ overflow: hidden;
+  //position: relative;
+
+}
+mat-dialog-container#modal-create-repo {
+  /* border: inset #262626; */
+  border-radius: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d0d0d0;
+ overflow: hidden;
+  //position: relative;
+
+}
+mat-dialog-container#modal-help {
+  /* border: inset #262626; */
+  height: 400px;
+  width: 600px;
+  border-radius: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d0d0d0;
+  overflow: hidden;
+  position: relative;
+  left: 40%;
+
+}
+
+mat-dialog-container#modal-save {
+  /* border: inset #262626; */
+  height: 200px;
+  width: 400px;
+  border-radius: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d0d0d0;
+  overflow: hidden;
+  position:  relative;
+  left : 32%
+ 
+
+}
+
+.mat-card.cdk-drag .mat-card-title {
+  color: #000000;
+}
+
+.mat-expansion-panel-body .mat-card.cdk-drag .mat-card-title {
+  color: #ffffff !important;
+}
+
+.jupyter-section {
+  margin-top: 5px;
+  overflow-y: hidden;
+  background: #949090;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  height: calc(100vh - 150px);
+}
+
+.drop-section {
+  background-color: #d0d0d0;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+.drop-section,
+.jupyter-section {
+  box-shadow: 2px 2px 5px 2px;
+  border-radius: 5px;
+}
+
+.dragdrop-container #list.cdk-drop-list {
+  height: 320px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .app-root>div {
+    margin-bottom: 100px;
+  }
+
+  .jupyter-section {
+    height: 100%;
+  }
+
+  .drop-section {
+    margin-top: 40px;
+    
+  }
+
+  .config-section.col-sm-4 {
+    padding: 0;
+    margin-top: 40px;
+   
+  }
+}
+
+
+
+
+
+
+// 6. Page-specific styles
+
+
+// 7. Themes
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';

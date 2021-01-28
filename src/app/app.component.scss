@@ -1,0 +1,164 @@
+
+
+#lbwork {
+    color: white;
+    padding-left: 3px;
+  }
+  #navImg {
+    width: 50px;
+    height: 50px;
+  }
+  .nav-bar {
+    background-color: #4e4d4d;
+  }
+  
+  .workspace-container {
+      //margin: 200px 300px 300px;
+      //padding-top: 100%;
+      //margin-top: 3px;
+  
+      align-items: center;
+      //height: 84.9vh;;
+      display: -webkit-inline-box;
+      //justify-content: center;
+      background-color: #d0d0d0;
+      //overflow-x: scroll;
+     // height: 73.3vh;
+      border-top: thick;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      /* color: black; */
+      padding-bottom: 70px
+  
+  
+  }
+  /*.btn-new {
+    background-color: #f27839;
+    //margin: auto;
+    //display: block;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    display: table;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px 2px;;
+    //margin-top: 2px;
+  
+  
+  }*/
+  .btn-new {
+    cursor: pointer;
+    display: table;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border: none;
+    text-shadow: 0px -1px 1px rgba(30, 30, 30, 0.8);
+    -webkit-border-radius: 5.405421901393581px;
+    -moz-border-radius: 5.405421901393581px;
+    border-radius: 5.405421901393581px;
+    background: #f27839;
+    background: -moz-linear-gradient(90deg, #fb6f27 23%, #ffa012 70%);
+    background: -webkit-linear-gradient(90deg, #fb6f27 23%, #ffa012 70%);
+    background: -o-linear-gradient(90deg, #fb6f27 23%, #ffa012 70%);
+    background: -ms-linear-gradient(90deg, #fb6f27 23%, #ffa012 70%);
+    background: linear-gradient(0deg, #fb6f27 23%, #ffa012 70%);
+    -webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+  }
+  
+  .button-delete {
+      background-color: #efefef;
+      padding: 11px 19px;
+      border: none;
+      
+      
+    }
+  .button-change {
+    
+    padding: 11px 19px;
+    border: none;
+    color: white;
+    margin-left: 3px;
+  }
+  .button-clone {
+    width: 100%;
+    color: white;
+  }
+    button {
+      //background-color: #080e17;
+      
+      margin-right: 8px;
+      /*margin-top: 8px;
+      //margin-left: 2px;
+      padding: 11px 19px;
+      border: none;
+      border-radius: 2px;
+      //margin: 20px;
+      width: 46%;
+      cursor: pointer;
+      //width: 100%;*/
+    }
+  
+  
+  .example-card {
+      width: 300px;
+      height: 300px;
+      background-color: #8d8c8c	;
+      box-shadow: 2px 2px 5px 2px;
+      margin-top: 31px;
+      margin-left: 5px;
+      
+      //border: inset;
+      //border-radius: 10px;
+    }
+  
+  .example-header-image {
+      background-image: url('https://wowsciencecamp.org/wp-content/uploads/2018/07/dummy-user-img-1.png');
+      background-size: cover;
+  }
+  
+  
+  .mat-card-header .mat-card-title {
+      
+    color: black;
+  }
+  
+  .mat-card{
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: #c0c0c0;
+    
+  }
+  
+  .list-container
+  {
+    overflow-y: auto;
+    height: 400px;
+    margin: 50px;
+    margin-top: 3%;
+   
+  }
+  
+  .btn-replace
+  {
+    margin-right: 3px;
+  }
+  .create-project-container
+  {
+    margin-top: 10px;
+  }
+  
+  table {
+    width: 100%;
+  
+  }
+  
+  th {
+    background-color: #b1b1b1;
+  }
+  

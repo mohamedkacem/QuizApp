@@ -1,0 +1,158 @@
+<!--<mat-selection-list class='workspace-container' #work>
+  <mat-list-option *ngFor='let elem of WorkList'>
+    <p> Project Name : {{elem.name}}</p>
+    <p>Author       : {{elem.author}}</p>
+  </mat-list-option>
+</mat-selection-list>
+<p>
+  Options selected: {{work.selectedOptions.selected.length}}
+</p>-->
+<!--<button type="submit" routerLink='project'>Create New Project</button>-->
+
+<!--<div class='workspace-container'>
+  <br>
+  <mat-card *ngFor = 'let elem of WorkList' class ='example-card '>
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{elem.id}}</mat-card-title>
+      <mat-card-subtitle>{{elem.author}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        project test
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button type="submit" routerLink='project' (click)="viewProject(elem)">change</button>
+      <button  class="btn btn-danger">delete</button>
+
+    </mat-card-actions>
+  </mat-card>
+
+
+</div>-->
+<!--<div class="bs-example">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <img src="assets/logo.png" id='navImg'>
+      <b id="lbwork">Self Analytique</b>
+      <a href="#" class="navbar-brand">Brand</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+              <a href="#" class="nav-item nav-link active">Home</a>
+              <a href="#" class="nav-item nav-link">About</a>
+              <a href="#" class="nav-item nav-link">Products</a>
+          </div>
+          <form class="form-inline ml-auto">
+              <input type="text" class="form-control mr-sm-2" placeholder="Search">
+              <input type="submit" class="btn btn-outline-light" value="Search"/>
+          </form>
+      </div>
+  </nav>
+</div>-->
+<div class="bs-example">
+  <nav class="nav-bar">
+    <img src="assets/logo.png" id='navImg'>
+    <b id="lbwork">Quiz Results</b>
+    
+  </nav>
+</div>
+
+<!--<div class="workspace-container ">
+ 
+  <mat-card *ngFor='let elem of WorkList' class='example-card '>
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{elem.id}}</mat-card-title>
+      <mat-card-subtitle>{{elem.author}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{elem.projectname}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button type="submit" class="button-change" routerLink='project' (click)="viewProject(elem)">Edit</button>
+      <button class="button-delete">Delete</button>
+      <button class="button-change" (click)="showVersions(elem.id)">show Versions</button>
+      <button class="button-change" (click)="showResults($event)">show Results</button>
+      <button class="button-clone" (click)="cloneProject(elem.id)">Clone</button>
+
+    </mat-card-actions>
+  </mat-card>
+</div>-->
+<div class="list-container">
+ <!--
+    <mat-card *ngFor="let elem of WorkList" class="module " >
+      class="module"  >
+      <mat-card-header >
+        <div class="col-md-8 col-sm-8">
+           <mat-card-title  (click)="getRepo(repo.path)" >
+             <h4><b>Author :</b>{{elem.author}}</h4>
+             <h4><b>Porject name :</b>{{elem.projectname}}</h4>
+             <h4><b>Porject type :</b>{{elem.type}}</h4>
+             <h4><b> Date of creation :</b>{{elem.date}}</h4>
+           </mat-card-title>
+        </div>
+   
+      <div class='col-md-4 col-sm-4'>
+       <mat-card-actions>
+         <button mat-button type="submit" class="button-change" routerLink='project' (click)="viewProject(elem)">Edit</button>
+         <button class="button-delete">Delete</button>
+         <button class="button-change" (click)="showVersions(elem.id)">show Versions</button>
+         <button class="button-change" (click)="showResults($event)">show Results</button>
+         <button class="button-clone" (click)="cloneProject(elem.id)">Clone</button>
+   
+       </mat-card-actions>
+   </div>
+      
+    <mat-card-subtitle>{{todo.category}}</mat-card-subtitle>
+    </mat-card-header>
+
+   </mat-card>
+ --> 
+ <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  
+  <ng-container matColumnDef="projectname">
+    <th mat-header-cell *matHeaderCellDef><b> PROJECT NAME</b> </th>
+    <td mat-cell *matCellDef="let element"> {{element.projectname}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="author">
+    <th mat-header-cell *matHeaderCellDef><b>AUTHOR</b>  </th>
+    <td mat-cell *matCellDef="let element"> {{element.author}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="date">
+    <th mat-header-cell *matHeaderCellDef> <b>DATE</b> </th>
+    <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="type">
+    <th mat-header-cell *matHeaderCellDef><b>TYPE</b>  </th>
+    <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+  </ng-container>
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef ><b>Actions</b>  </th>
+    <td mat-cell *matCellDef="let element" >
+         <button mat-button class="btn btn-success" routerLink='project' (click)="viewProject(element)" >Edit</button>
+         <button mat-button class="btn btn-secondary" >Clone</button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+</table> 
+              
+
+</div>
+
+
